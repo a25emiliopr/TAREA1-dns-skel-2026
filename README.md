@@ -5,7 +5,7 @@ Podes empregar contedores, con debian 13 e un único interface de rede
 
 Poderás necesitar instalar o paquete `dnsutils`
 
-Crea un ficheiro Markdown con extension .md coas capturas que fagas para demostrar o funcionamento
+Crea un ficheiro Markdown con extension .md coas capturas que fagas para demostar o funcionamento
 
 Instala o servidor BIND9 no equipo `darthvader`. Comproba que xa funciona coma servidor DNS caché pegando no documento de - entrega a saída deste comando `dig @localhost xunta.gal` 
 
