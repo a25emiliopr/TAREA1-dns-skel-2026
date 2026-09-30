@@ -7,7 +7,7 @@ Poderás necesitar instalar o paquete `dnsutils`
 
 Crea un ficheiro Markdown con extension .md coas capturas que fagas para demostar o funcionamento
 
-Instala o servidor BIND9 no equipo `darthvader`. Comproba que xa funciona coma servidor DNS caché pegando no documento de - entrega a saída deste comando `dig @localhost xunta.gal` 
+Instala o servidor BIND9 no equipo `darthvader`. Comproba que xa funciona coma servidsssor DNS caché pegando no documento de - entrega a saída deste comando `dig @localhost xunta.gal` 
 
 Configura o servidor BIND9 no equipo mandalorian para que empregue como reenviador a darthvader pegando no documento de entrega contido do ficheiro /etc/bind/named.conf.options e a saída deste comando: `dig @localhost santiagodecompostela.gal.` Para un correcto funcionamento deberás borrar as root-hints do servidor mandalorian.
 
