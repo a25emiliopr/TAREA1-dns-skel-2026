@@ -1,11 +1,14 @@
 
-1- ![alt text](image-1.png)
+1-
 
-2- ![alt text](image.png)
+ ![alt text](image-1.png)
 
-3- 
+2- 
 
-### db.starwars.lan
+![alt text](image.png)
+
+3
+ ### db.starwars.lan
 
 $TTL    86400
 @       IN      SOA     darthvader.starwars.lan. admin.starwars.lan. (
@@ -52,6 +55,7 @@ zone "20.168.192.in-addr.arpa" {
     file "/var/cache/bind/db.192.168.20";
 };
 
+4-
 ### db.192.168.20
 
 $TTL    86400
@@ -73,18 +77,21 @@ $TTL    86400
 26      IN      PTR     c3p0.starwars.lan.
 101     IN      PTR     skywalker.starwars.lan.
 
-![alt text](image-2.png)
 
-![alt text](image-3.png)
+5-
 
-![alt text](image-4.png)
+![alt text](image-10.png)
 
-![alt text](image-5.png)
+![alt text](image-11.png)
 
-![alt text](image-6.png)
+![alt text](image-12.png)
 
-![alt text](image-7.png)
+![alt text](image-13.png)
 
-![alt text](image-8.png)
+![alt text](image-14.png)
 
-![alt text](image-9.png)
+![alt text](image-15.png)
+
+![alt text](image-16.png)
+
+![alt text](image-17.png)
