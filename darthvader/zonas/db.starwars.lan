@@ -1,0 +1,29 @@
+$TTL    86400
+@       IN      SOA     darthvader.starwars.lan. admin.starwars.lan. (
+                        2026100701 ; Número de série (Formato recomendado: YYYYMMDDnn)
+                        3600       ; Refresh (1 hora)
+                        1800       ; Retry (30 minutos)
+                        1209600    ; Expire (2 semanas)
+                        86400 )    ; Minimum TTL (1 dia)
+
+; Servidores de nomes (NS)
+@       IN      NS      darthvader.starwars.lan.
+@       IN      A       192.168.20.10
+
+; Registos A dos servidores
+darthvader   IN  A      192.168.20.10
+mandalorian  IN  A      192.168.20.11
+darthsidious IN  A      192.168.20.11
+skywalker    IN  A      192.168.20.101
+skywalker    IN  A      192.168.20.111
+luke         IN  A      192.168.20.22
+yoda         IN  A      192.168.20.24
+yoda         IN  A      192.168.20.25
+c3p0         IN  A      192.168.20.26
+
+; Alias (CNAME) e Correio (MX)
+palpatine    IN  CNAME  darthsidious.starwars.lan.
+@            IN  MX 10  c3p0.starwars.lan.
+
+; Registos de texto (TXT)
+lenda        IN  TXT    "Que a forza te acompañe"

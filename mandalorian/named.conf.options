@@ -6,8 +6,4 @@ options {
     };
 
     forward only;
-
-    dnssec-validation auto;
-
-    listen-on-v6 { any; };
 };

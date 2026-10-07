@@ -4,8 +4,8 @@ services:
     build: dnsserver
     hostname: mandalorian
     volumes:
-      - ./mandalorian/named.conf.options:/etc/bind/named.conf.options
-      - ./mandalorian/named.conf.default-zones:/etc/bind/named.conf.default-zones
+     - ./mandalorian/named.conf.options:/etc/bind/named.conf.options
+    #  - ./mandalorian/named.conf.default-zones:/etc/bind/named.conf.default-zones
     networks:
       rededns:
         ipv4_address: 192.168.20.11
@@ -13,12 +13,15 @@ services:
     build: dnsserver
     hostname: darthvader
     # command: -g -4
-    # volumes:
-    #   - ./darthvader/named.conf.options:/etc/bind/named.conf.options
-    #   - ./darthvader/named.conf.local:/etc/bind/named.conf.local
-    #   - ./darthvader/zonas:/var/cache/bind
-    #   - ./dnsserver/root.hints:/usr/share/dns/root.hints
-    #   - ./logs:/logs
+    volumes:
+      #- ./darthvader/named.conf.options:/etc/bind/named.conf.options
+      - ./darthvader/zonas/named.conf.local:/etc/bind/named.conf.local
+      - ./darthvader/zonas/db.starwars.lan:/etc/bind/db.starwars.lan
+      - ./darthvader/zonas:/var/cache/bind
+      #- ./dnsserver/root.hints:/usr/share/dns/root.hints
+      - ./darthvader/named.conf.default-zones:/etc/bind/named.conf.default-zones
+      #- ./logs:/logs
+
     networks:
       rededns:
         ipv4_address: 192.168.20.10
