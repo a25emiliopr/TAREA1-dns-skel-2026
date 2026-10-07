@@ -7,6 +7,7 @@ RUN apt update  && apt install -y \
     bind9 \
     bind9utils \
     dnsutils \
+    nano \
     rsyslog \
     && rm -rf /var/lib/apt/lists/*
 
