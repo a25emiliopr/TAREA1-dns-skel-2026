@@ -8,7 +8,7 @@ services:
     #  - ./mandalorian/named.conf.default-zones:/etc/bind/named.conf.default-zones
     networks:
       rededns:
-        ipv4_address: 192.168.20.11
+        ipv4_address: 192.168.20.20
   darthvader:
     build: dnsserver
     hostname: darthvader
@@ -25,6 +25,16 @@ services:
     networks:
       rededns:
         ipv4_address: 192.168.20.10
+  darthsidious:
+    build: dnsserver
+    hostname: darthsidious
+    depends_on:
+      - darthvader
+    networks:
+      rededns:
+        ipv4_address: 192.168.20.11
+    volumes:
+      - ./darthsidious/named.conf.local:/etc/bind/named.conf.local
   cliente:
     build: cliente
     hostname: cliente1

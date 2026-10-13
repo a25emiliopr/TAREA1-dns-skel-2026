@@ -1,3 +1,4 @@
+### 1.1 Instalación de zonas mestras primarias
 
 1-
 
@@ -95,3 +96,20 @@ $TTL    86400
 ![alt text](image-16.png)
 
 ![alt text](image-17.png)
+
+
+### 1.3 Instalación de zonas secundarias.
+
+
+1-
+![alt text](image-19.png)
+
+2-
+
+
+![alt text](image-18.png)
+3-
+
+
+4-
+
