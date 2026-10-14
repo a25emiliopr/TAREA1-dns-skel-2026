@@ -1,0 +1,18 @@
+logging {
+    channel queries_file {
+        file "/var/log/bind/queries.log" versions 3 size 10m;
+        severity info;
+        print-time yes;
+        print-category yes;
+    };
+    channel update_file {
+        file "/var/log/bind/update.log" versions 3 size 10m;
+        severity info;
+        print-time yes;
+        print-category yes;
+    };
+
+    category queries { queries_file; };
+    category update { update_file; };
+    category update-security { update_file; };
+};

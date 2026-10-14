@@ -102,14 +102,13 @@ $TTL    86400
 
 
 1-
-![alt text](image-19.png)
+![alt text](image-19.png)alt text
 
 2-
-
-
 ![alt text](image-18.png)
+![alt text](image-20.png)
 3-
-
+![alt text](image-21.png)
 
 4-
 

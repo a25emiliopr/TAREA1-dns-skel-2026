@@ -14,17 +14,17 @@ services:
     hostname: darthvader
     # command: -g -4
     volumes:
-      #- ./darthvader/named.conf.options:/etc/bind/named.conf.options
+      - ./darthvader/named.conf.options:/etc/bind/named.conf.options
       - ./darthvader/zonas/named.conf.local:/etc/bind/named.conf.local
       - ./darthvader/zonas/db.starwars.lan:/etc/bind/db.starwars.lan
       - ./darthvader/zonas:/var/cache/bind
       #- ./dnsserver/root.hints:/usr/share/dns/root.hints
       - ./darthvader/named.conf.default-zones:/etc/bind/named.conf.default-zones
-      #- ./logs:/logs
-
+      - ./darthvader/logs:/var/log/bind
     networks:
       rededns:
         ipv4_address: 192.168.20.10
+
   darthsidious:
     build: dnsserver
     hostname: darthsidious
